@@ -1,16 +1,16 @@
 apiVersion: batch/v1
 kind: Job
 metadata:
-  name: serverless-simulaion
+  name: serverless-simulation
   labels:
-    app: serverless-simulaion
+    app: serverless-simulation
   namespace: ml-infra
 spec:
   template:
     metadata:
-      name: serverless-simulaion
+      name: serverless-simulation
       labels:
-        app: serverless-simulaion
+        app: serverless-simulation
     spec:
       restartPolicy: Never
       containers:
